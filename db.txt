@@ -1,0 +1,25 @@
+create database doctorpatientapp;
+use doctorpatientapp;
+
+create table user_signup(username varchar(50) primary key,
+password varchar(50),
+phone_no varchar(50),
+email varchar(50),
+address varchar(50),
+description varchar(200),
+usertype varchar(40));
+
+create table appointment(appointment_id int primary key,
+patient_name varchar(50),
+doctor_name varchar(50),
+disease_details varchar(150),
+prescription varchar(150),
+appointment_date date,
+booking_date varchar(40));
+
+create table mri(patient_name varchar(50),
+mri_file varchar(50),
+detected_disease varchar(50),
+entry_date varchar(30));
+
+
